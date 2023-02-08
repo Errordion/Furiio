@@ -31,8 +31,8 @@ body {
 }
 
 .bg-1 {
-  width: 100vw;
-  height: 100vh;
+  width: 50vw;
+  height: 50vh;
   opacity: 0;
   animation: page-up 1s ease 0s none;
   position: absolute;
