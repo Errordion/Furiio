@@ -1,0 +1,129 @@
+
+
+.play-music {
+  display: flex;
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  z-index: 50;
+}
+
+.music-animation {
+  display: flex;
+  margin-right: 10px;
+  align-items: flex-end;
+  position: relative;
+  top: -5px;
+}
+.music-animation.on .bar {
+  -webkit-animation: bar 1.2s infinite;
+          animation: bar 1.2s infinite;
+}
+.music-animation.on .bar2 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+.music-animation.on .bar3 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+.music-animation.on .bar4 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+.music-animation.on .bar5 {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.music-toggle {
+  cursor: pointer;
+  font-size: 20px;
+  position: relative;
+}
+.music-toggle:after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 0;
+  background-color: #000;
+  position: absolute;
+  transition: 0.2s;
+}
+.music-toggle:hover:after {
+  width: 100%;
+}
+
+.bar {
+  width: 1px;
+  background-color: #000;
+  height: 2px;
+  display: block;
+  margin: 0 1px;
+}
+
+@-webkit-keyframes bar {
+  0% {
+    height: 4px;
+  }
+  50% {
+    height: 14px;
+  }
+  100% {
+    height: 4px;
+  }
+}
+
+@keyframes bar {
+  0% {
+    height: 4px;
+  }
+  50% {
+    height: 14px;
+  }
+  100% {
+    height: 4px;
+  }
+}
+.dance-frame {
+  width: 400px;
+}
+
+.dance-animation {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  width: calc(11 * 400px);
+  display: flex;
+  transform: translateX(2000px);
+  -webkit-animation: play 1.3s steps(11) infinite;
+          animation: play 1.3s steps(11) infinite;
+}
+
+.screen {
+  position: absolute;
+  height: 600px;
+  width: 400px;
+  border: 500vw solid #fff;
+  z-index: 20;
+  pointer-events: none;
+}
+
+@-webkit-keyframes play {
+  100% {
+    transform: translateX(-2400px);
+  }
+}
+
+@keyframes play {
+  100% {
+    transform: translateX(-2400px);
+  }
+}
+.dance-frame {
+  position: relative;
+  height: 550px;
+}
+
+
+
