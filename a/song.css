@@ -3,8 +3,8 @@
 .play-music {
   display: flex;
   position: absolute;
-  bottom: -630px;
-  left: 350px;
+  bottom: 50px;
+  left: 50px;
   z-index: 50;
 }
 
