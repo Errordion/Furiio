@@ -49,7 +49,7 @@
 
 .music-toggle {
   cursor: pointer;
-  font-size: 30px;
+  font-size: 35px;
   position: relative;
 }
 .music-toggle:after {
