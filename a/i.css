@@ -576,7 +576,7 @@ main {
     width: 120px;
     height: 170px;
     content: "";
-    background: url(https://www.vap.co.jp/warumonosan-anime/assets/images/original-img.jpg) center/contain no-repeat;
+    background: url(https://i.pinimg.com/736x/98/47/b8/9847b813e25b1ec50abfe409900316ee.jpg) center/contain no-repeat;
     transform: rotate(-5deg) translateY(-50%)
 }
 
@@ -596,7 +596,7 @@ main {
     color: #474747;
     text-decoration: none;
     white-space: nowrap;
-    content: "Â©Yuu Morikawa/SQUARE ENIX";
+    content: "watch anime here ";
     transform: translateX(-50%)
 }
 
