@@ -59,8 +59,8 @@ a:active,a:hover {
     outline-width: 0
 }
 
-code,kbd,pre,samp {
-    font-family: monospace,monospace
+body { 
+font-family: 'Noto Sans Thai', sans-serif;
 }
 
 pre {
