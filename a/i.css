@@ -1,3 +1,6 @@
+body { 
+font-family: 'Noto Sans Thai', sans-serif;
+}
 html {
     -webkit-text-size-adjust: 100%;
     box-sizing: border-box;
@@ -60,7 +63,7 @@ a:active,a:hover {
 }
 
 code,kbd,pre,samp { 
-font-family: 'Noto Sans Thai', sans-serif;
+font-family: monospace,monospace
 }
 
 pre {
