@@ -59,7 +59,7 @@ a:active,a:hover {
     outline-width: 0
 }
 
-body { 
+code,kbd,pre,samp { 
 font-family: 'Noto Sans Thai', sans-serif;
 }
 
