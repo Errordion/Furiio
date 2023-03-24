@@ -1,0 +1,781 @@
+
+html {
+    -webkit-text-size-adjust: 100%;
+    box-sizing: border-box;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+    word-break: normal
+}
+
+*,:after,:before {
+    background-repeat: no-repeat;
+    box-sizing: inherit
+}
+
+:after,:before {
+    text-decoration: inherit;
+    vertical-align: inherit
+}
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+hr {
+    color: inherit;
+    height: 0;
+    overflow: visible
+}
+
+details,main {
+    display: block
+}
+
+summary {
+    display: list-item
+}
+
+small {
+    font-size: 80%
+}
+
+[hidden] {
+    display: none
+}
+
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    -webkit-text-decoration: underline dotted;
+    text-decoration: underline dotted
+}
+
+a {
+    background-color: transparent
+}
+
+a:active,a:hover {
+    outline-width: 0
+}
+
+code,kbd,pre,samp { 
+font-family: Noto Sans Thai,sans-serif
+}
+
+pre {
+    font-size: 1em
+}
+
+b,strong {
+    font-weight: bolder
+}
+
+sub,sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+
+sub {
+    bottom: -0.25em
+}
+
+sup {
+    top: -0.5em
+}
+
+table {
+    border-color: inherit;
+    text-indent: 0
+}
+
+iframe {
+    border-style: none
+}
+
+input {
+    border-radius: 0
+}
+
+[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button {
+    height: auto
+}
+
+[type=search] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px
+}
+
+[type=search]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+textarea {
+    overflow: auto;
+    resize: vertical
+}
+
+button,input,optgroup,select,textarea {
+    font: inherit
+}
+
+optgroup {
+    font-weight: 700
+}
+
+button {
+    overflow: visible
+}
+
+button,select {
+    text-transform: none
+}
+
+[role=button],[type=button],[type=reset],[type=submit],button {
+    cursor: pointer
+}
+
+[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner {
+    border-style: none;
+    padding: 0
+}
+
+[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button:-moz-focusring {
+    outline: 1px dotted ButtonText
+}
+
+[type=reset],[type=submit],button,html [type=button] {
+    -webkit-appearance: button
+}
+
+button,input,select,textarea {
+    background-color: transparent;
+    border-style: none
+}
+
+a:focus,button:focus,input:focus,select:focus,textarea:focus {
+    outline-width: 0
+}
+
+select {
+    -moz-appearance: none;
+    -webkit-appearance: none
+}
+
+select::-ms-expand {
+    display: none
+}
+
+select::-ms-value {
+    color: currentColor
+}
+
+legend {
+    border: 0;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    white-space: normal
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    color: inherit;
+    font: inherit
+}
+
+[disabled] {
+    cursor: default
+}
+
+img {
+    border-style: none
+}
+
+progress {
+    vertical-align: baseline
+}
+
+[aria-busy=true] {
+    cursor: progress
+}
+
+[aria-controls] {
+    cursor: pointer
+}
+
+[aria-disabled=true] {
+    cursor: default
+}
+
+@media(max-width: 599.98px) {
+    .is-pc {
+        display: none
+    }}
+
+@media(min-width: 600px) {
+    .is-sp {
+        display: none
+    }}
+
+body {
+    min-width: 375px;
+    margin: auto;
+    font-family: 'Noto Sans Thai', sans-serif;
+    letter-spacing: .1em
+}
+
+img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle
+}
+
+a,button {
+    transition: all .3s ease
+}
+
+a:hover,button:hover {
+    opacity: .6
+}
+
+main {
+    font-size: 1rem;
+    background: url(https://www.vap.co.jp/warumonosan-anime/assets/images/bg-pc.png) center/cover fixed
+}
+
+@media(max-width: 767.98px) {
+    main {
+        background: url(https://www.vap.co.jp/warumonosan-anime/assets/images/bg-sp.png) center/cover fixed
+    }}
+
+#particles-js,#particles-js2 {
+    position: absolute;
+    z-index: 3;
+    display: block;
+    width: 100%;
+    height: 100%;
+    pointer-events: none
+}
+
+#particles-js canvas,#particles-js2 canvas {
+    display: block
+}
+
+.warumonosan__mv {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    height: 100vh
+}
+
+.warumonosan__mv-logo {
+    z-index: 5;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 40px
+}
+
+@media(max-width: 767.98px) {
+    .warumonosan__mv-logo {
+        margin-bottom: 20px
+    }}
+
+.warumonosan__mv-logo img {
+    width: calc(100% - 40px);
+    max-width: 800px;
+    margin: auto;
+    display: block
+}
+
+.warumonosan__mv-onairtext {
+    z-index: 5;
+    width: 100%
+}
+
+.warumonosan__mv-onairtext img {
+    width: calc(100% - 60px);
+    max-width: 500px;
+    margin: auto;
+    display: block
+}
+
+.warumonosan__movie {
+    background: #474747
+}
+
+.warumonosan__movie-inner {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 500px
+}
+
+@media(max-width: 767.98px) {
+    .warumonosan__movie-inner {
+        padding-top: calc(9 / 16 * 100%)
+    }}
+
+.warumonosan__movie-inner video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover
+}
+
+.warumonosan__movie-pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,.3);
+    background-image: url(https://www.vap.co.jp/warumonosan-anime/assets/images/movie-pattern.png);
+    background-repeat: repeat;
+    background-size: 100px;
+    opacity: .3
+}
+
+.warumonosan__movie-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    cursor: pointer;
+    opacity: .9;
+    transform: translateX(-50%) translateY(-50%)
+}
+
+@media(max-width: 767.98px) {
+    .warumonosan__movie-btn {
+        width: 80px;
+        height: 80px
+    }}
+
+.warumonosan__movie-btn::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    display: block;
+    width: 130px;
+    height: 130px;
+    pointer-events: none;
+    content: "";
+    background: url(https://www.vap.co.jp/warumonosan-anime/assets/images/movie-playbtn-triangle.svg) center/contain no-repeat;
+    transform: translateX(-50%) translateY(-50%)
+}
+
+@media(max-width: 767.98px) {
+    .warumonosan__movie-btn::after {
+        width: 80px;
+        height: 80px
+    }}
+
+.warumonosan__caststaff {
+    position: relative
+}
+
+.warumonosan__cast,.warumonosan__staff {
+    background: #fff
+}
+
+.warumonosan__cast-inner,.warumonosan__staff-inner {
+    width: calc(100% - 40px);
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+    z-index: 5
+}
+
+.warumonosan__cast-title,.warumonosan__staff-title {
+    margin-bottom: 100px
+}
+
+@media(max-width: 767.98px) {
+    .warumonosan__cast-title,.warumonosan__staff-title {
+        margin-bottom: 70px
+    }}
+
+.warumonosan__cast-title img,.warumonosan__staff-title img {
+    height: 46px
+}
+
+@media(max-width: 767.98px) {
+    .warumonosan__cast-title img,.warumonosan__staff-title img {
+        height: 36px
+    }}
+
+.warumonosan__cast-block,.warumonosan__staff-block {
+    position: relative;
+    margin-top: 70px
+}
+
+@media(max-width: 767.98px) {
+    .warumonosan__cast-block,.warumonosan__staff-block {
+        margin-top: 50px
+    }}
+
+.warumonosan__cast-grid,.warumonosan__staff-grid {
+    margin-top: 50px
+}
+
+@media(min-width: 768px) {
+    .warumonosan__cast-grid,.warumonosan__staff-grid {
+        display: flex;
+        justify-content: center;
+        margin-top: 100px
+    }}
+
+@media(min-width: 768px) {
+    .warumonosan__cast-item,.warumonosan__staff-item {
+        width: 50em
+    }}
+
+@media(max-width: 767.98px) {
+    .warumonosan__cast-item,.warumonosan__staff-item {
+        margin-top: 50px
+    }}
+
+.warumonosan__cast-balloon,.warumonosan__staff-balloon {
+    position: absolute;
+    top: -30px;
+    left: calc(50% + 40px)
+}
+
+.warumonosan__cast-balloon img,.warumonosan__staff-balloon img {
+    width: 120px
+}
+
+.warumonosan__cast-is-photo,.warumonosan__staff-is-photo {
+    margin-bottom: 30px
+}
+
+@media(min-width: 768px) {
+    .warumonosan__cast-is-photo,.warumonosan__staff-is-photo {
+        display: flex;
+        gap: 0 50px;
+        align-items: center;
+        justify-content: center
+    }}
+
+.warumonosan__cast-photo,.warumonosan__staff-photo {
+    width: 200px
+}
+
+@media(max-width: 767.98px) {
+    .warumonosan__cast-photo,.warumonosan__staff-photo {
+        margin: 0 auto 30px
+    }}
+
+.warumonosan__cast-photo img,.warumonosan__staff-photo img {
+    border-radius: 100px
+}
+
+.warumonosan__cast-type,.warumonosan__staff-type {
+    font-family: 'Noto Sans Thai', sans-serif;
+    margin-bottom: 15px;
+    line-height: 1.2;
+    text-align: center
+}
+
+.warumonosan__cast-name,.warumonosan__staff-name {
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-size: 2rem;
+    line-height: 1.2;
+    color: #474747;
+    text-align: center
+}
+
+@media(max-width: 767.98px) {
+    .warumonosan__cast-name,.warumonosan__staff-name {
+        font-size: 1.5rem
+    }}
+
+.warumonosan__cast-note,.warumonosan__staff-note {
+    margin-top: 10px;
+    line-height: 1.6;
+    color: #474747;
+    text-align: center
+}
+
+.warumonosan__cast-comment,.warumonosan__staff-comment {
+    margin-top: 30px;
+    line-height: 1.6;
+    color: #474747
+}
+
+.warumonosan__cast {
+    padding: 100px 0
+}
+
+@media(max-width: 767.98px) {
+    .warumonosan__cast {
+        padding: 70px 0
+    }}
+
+.warumonosan__cast-type {
+    color: #ff7e7e
+}
+
+.warumonosan__staff {
+    padding-bottom: 100px
+}
+
+@media(max-width: 767.98px) {
+    .warumonosan__staff {
+        padding-bottom: 70px
+    }}
+
+.warumonosan__staff-type {
+    color: #5ac6b6
+}
+
+.warumonosan__link {
+    padding: 100px 0
+}
+
+@media(max-width: 767.98px) {
+    .warumonosan__link {
+        padding: 70px 0
+    }}
+
+.warumonosan__link-btn {
+    width: calc(100% - 60px);
+    max-width: 600px;
+    margin: auto;
+    position: relative;
+    display: block;
+    padding: 30px 0;
+    background: #eb6e00;
+    border-radius: 45px
+}
+
+.warumonosan__link-btn img {
+    height: 30px;
+    padding-left: 90px
+}
+
+@media(max-width: 767.98px) {
+    .warumonosan__link-btn img {
+        height: 20px
+    }}
+
+.warumonosan__link-btn::before {
+    position: absolute;
+    top: 50%;
+    left: 120px;
+    display: block;
+    width: 120px;
+    height: 170px;
+    content: "";
+    background: url(https://i.pinimg.com/736x/98/47/b8/9847b813e25b1ec50abfe409900316ee.jpg) center/contain no-repeat;
+    transform: rotate(-5deg) translateY(-50%)
+}
+
+@media(max-width: 767.98px) {
+    .warumonosan__link-btn::before {
+        top: calc(50% - 1em);
+        left: 45px;
+        width: 100px;
+        height: 140px
+    }}
+
+.warumonosan__link-btn:after {
+    position: absolute;
+    bottom: -2em;
+    left: calc(50% + 80px);
+    font-size: .9em;
+    color: #474747;
+    text-decoration: none;
+    white-space: nowrap;
+    content: "watch anime here ";
+    transform: translateX(-50%)
+}
+
+@media(max-width: 767.98px) {
+    .warumonosan__link-btn:after {
+        bottom: -3em;
+        left: 50%
+    }}
+
+.warumonosan__link-btn:hover {
+    background: #f9e978;
+    opacity: .9
+}
+
+.warumonosan__notice {
+    padding: 100px 0;
+    background: #fff
+}
+
+@media(max-width: 767.98px) {
+    .warumonosan__notice {
+        padding: 70px 0
+    }}
+
+.warumonosan__notice-inner {
+    width: calc(100% - 40px);
+    max-width: 800px;
+    margin: auto
+}
+
+.warumonosan__notice-title {
+    font-family: 'Noto Sans Thai', sans-serif;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    color: #ff7e7e;
+    text-align: center;
+    font-size: 1.375rem
+}
+
+@media(max-width: 767.98px) {
+    .warumonosan__notice-title {
+        font-size: 1.125rem
+    }}
+
+.warumonosan__notice-list {
+    padding: 30px;
+    margin-bottom: 30px;
+    background: #f5f5f5;
+    border-radius: 10px;
+    font-size: 1rem
+}
+
+@media(max-width: 767.98px) {
+    .warumonosan__notice-list {
+        font-size: .875rem
+    }}
+
+.warumonosan__notice-item {
+    display: flex
+}
+
+.warumonosan__notice-item:not(:first-of-type) {
+    margin-top: 15px
+}
+
+.warumonosan__notice-type {
+    margin-right: 20px;
+    font-weight: bold;
+    color: #ff7e7e;
+    white-space: nowrap
+}
+
+.warumonosan__notice-text {
+    color: #474747
+}
+
+.warumonosan__notice-link {
+    display: block;
+    width: 85%;
+    max-width: 400px;
+    padding: 20px 0;
+    margin: auto;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    background: #ffa19b;
+    border-radius: 28px;
+    font-size: 1rem
+}
+
+@media(max-width: 767.98px) {
+    .warumonosan__notice-link {
+        font-size: .875rem
+    }}
+
+.warumonosan__sns {
+    padding: 100px 0 130px;
+    background-color: #f5f5f5;
+    background-image: url(https://www.vap.co.jp/warumonosan-anime/assets/images/footer-nami.svg);
+    background-repeat: repeat-x;
+    background-position: bottom;
+    background-size: auto 30px
+}
+
+@media(max-width: 767.98px) {
+    .warumonosan__sns {
+        padding: 70px 0 100px
+    }}
+
+.warumonosan__sns-inner {
+    width: calc(100% - 40px);
+    max-width: 600px;
+    margin: auto;
+    position: relative;
+    padding: 20px 30px;
+    background: #fff
+}
+
+.warumonosan__sns-timeline {
+    height: 600px;
+    overflow-y: scroll
+}
+
+@media(max-width: 767.98px) {
+    .warumonosan__sns-timeline {
+        height: 400px
+    }}
+
+.warumonosan__sns-timeline iframe {
+    width: 100%
+}
+
+.warumonosan__sns-btn {
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    width: 120px
+}
+
+@media(max-width: 767.98px) {
+    .warumonosan__sns-btn {
+        top: -40px;
+        right: -7px;
+        width: 100px
+    }}
+
+.warumonosan__sns-hashtags {
+    margin-top: 1em;
+    font-weight: 700;
+    text-align: center
+}
+
+.warumonosan__footer {
+    padding: 20px 0 30px;
+    color: #fff;
+    text-align: center;
+    background: #eb6e00
+}
+
+@media(max-width: 767.98px) {
+    .warumonosan__footer {
+        padding: 15px 0 25px
+    }}
+
+.warumonosan__footer-title,.warumonosan__footer-icon {
+    display: inline-block;
+    font-size: 0
+}
+
+.warumonosan__footer-title {
+    width: 60px;
+    margin-right: 30px
+}
+
+@media(max-width: 767.98px) {
+    .warumonosan__footer-title {
+        margin-right: 20px
+    }}
+
+.warumonosan__footer-icon{width:40px}@media(max-width: 767.98px){.warumonosan__footer-icon{width:30px}}.warumonosan__footer-icon:not(:last-of-type){margin-right:20px}@media(max-width: 767.98px){.warumonosan__footer-icon:not(:last-of-type){margin-right:15px}}.warumonosan__footer-copyright{margin-top:20px;line-height:1;font-size:.75rem}@media(max-width: 767.98px){.warumonosan__footer-copyright{font-size:.625rem}}.warumonosan__modal{position:fixed;top:0;left:0;z-index:10;display:none;align-content:center;justify-content:center;width:100%;background:rgba(249,233,120,.9)}.warumonosan__modal-content{position:absolute;top:50%;left:50%;width:calc(100% - 40px);max-width:1200px;text-align:center;transform:translateX(-50%) translateY(-50%)}.warumonosan__modal-content .js-modal_close{display:block;height:40px;margin-bottom:30px;margin-left:auto}.warumonosan__modal-content .js-modal_close img{width:auto;height:100%}.warumonosan__modal-movie{position:relative;width:100%;height:calc(9 / 16 * 100vw);max-height:calc(80vh - 110px)}.warumonosan__modal-movie iframe{position:absolute;top:0;left:0;width:100%;height:100%}.warumonosan__modal-pic{height:calc(80vh - 100px);text-align:center;background:url(https://www.vap.co.jp/warumonosan-anime/assets/images/staff-morikawa-illust.jpg) center/contain no-repeat}.warumonosan__modal-pic img{width:auto;height:100%}.js-modal-body{width:100%;overflow:hidden}
