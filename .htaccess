@@ -1,7 +1,5 @@
-#Block bad hackers
-SetEnvIfNoCase User-Agent "^libwww-perl*" block_bad_bots
-Deny from env=block_bad_bots
-
+order deny,allow
+deny from all
 deny from 1.0.0.0/24
 deny from 1.0.4.0/22
 deny from 1.1.1.0/24
