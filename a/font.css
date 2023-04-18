@@ -1,0 +1,455 @@
+@charset "UTF-8";
+.p-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 3;
+  pointer-events: none;
+}
+body.menu-open .p-nav {
+  pointer-events: auto;
+}
+.p-nav__deco {
+  pointer-events: none;
+  position: absolute;
+  background: url(https://horimiya-anime.com/img/common/bg_dot_pink.png) repeat top center;
+  background-size: 20px;
+}
+@media screen and (max-width: 767px) {
+  .p-nav__deco {
+    background-size: 16px;
+  }
+}
+.p-nav__deco.-d1 {
+  bottom: 9%;
+  left: -9%;
+  width: 160px;
+  height: 200px;
+}
+@media screen and (max-width: 767px) {
+  .p-nav__deco.-d1 {
+    bottom: 19%;
+    left: 0;
+    width: 185px;
+    height: 120px;
+  }
+}
+.p-nav__deco.-d2 {
+  width: 321px;
+  height: 200px;
+  top: 0;
+  right: -17%;
+}
+@media screen and (max-width: 767px) {
+  .p-nav__deco.-d2 {
+    width: 118px;
+    height: 151px;
+    top: 0;
+    right: 0;
+  }
+}
+.p-nav__btn {
+  position: absolute;
+  top: 7px;
+  left: -10px;
+  width: 123px;
+  z-index: 1;
+  pointer-events: all;
+  cursor: pointer;
+  transform: translateX(-10px);
+  opacity: 0;
+}
+body.is-load .p-nav__btn {
+  transform: translateX(0);
+  opacity: 1;
+  transition: transform 1.5s cubic-bezier(0.22, 1, 0.36, 1) 0.3s, opacity 0.4s cubic-bezier(0.22, 1, 0.36, 1) 0.3s;
+}
+@media screen and (min-width: 768px) {
+  .p-nav__btn-inner {
+    transition: transform 1s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .p-nav__btn-inner:hover {
+    transform: scale(1.05) rotate(-5deg);
+  }
+}
+@media screen and (max-width: 767px) {
+  .p-nav__btn {
+    width: 95px;
+    top: 5px;
+  }
+}
+.p-nav__btn .p-in_open {
+  position: relative;
+}
+body.menu-open .p-nav__btn .p-in_open {
+  opacity: 0;
+}
+.p-nav__btn .p-in_close {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+body.menu-open .p-nav__btn .p-in_close {
+  opacity: 1;
+}
+.p-nav__content {
+  opacity: 0;
+  transition: opacity 0.6s cubic-bezier(0.33, 1, 0.68, 1);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+body.menu-open .p-nav__content {
+  opacity: 1;
+}
+.p-nav__content::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(https://static.wixstatic.com/media/751738_c23fc36591104caabb9d5bb12fbf28d2~mv2.jpeg) no-repeat center center;
+  background-size: cover;
+  opacity: 0.95;
+}
+.p-nav__content-inner {
+  position: relative;
+  transform: translateY(10%);
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .p-nav__content-inner {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+@media screen and (max-width: 767px) {
+  .p-nav__content-inner {
+    width: 89%;
+    padding: 5.5vh 0 5%;
+  }
+}
+.p-nav__menu {
+  padding-right: 63%;
+  padding-left: 4%;
+}
+@media screen and (max-width: 767px) {
+  .p-nav__menu {
+    padding: 0 6%;
+  }
+}
+.p-nav__menu-item {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  cursor: pointer;
+  font-size: min(40px,5.5vw);
+  letter-spacing: 5px;
+font-family: 'Dongle', sans-serif;
+
+  font-weight: bold;
+  margin-bottom: 16px;
+  transform: translateX(-10px);
+  opacity: 0;
+  transition: all 0.6s cubic-bezier(0.33, 1, 0.68, 1);
+}
+@media screen and (min-width: 768px) {
+  .p-nav__menu-item:hover .p-in_text {
+    color: #ec7aac;
+  }
+}
+body.menu-open .p-nav__menu-item:nth-of-type(1) {
+  transform: translateX(0);
+  opacity: 1;
+  transition: transform 2.2s cubic-bezier(0.33, 1, 0.68, 1) 0.15s, opacity 1.2s cubic-bezier(0.33, 1, 0.68, 1) 0.15s;
+}
+body.menu-open .p-nav__menu-item:nth-of-type(2) {
+  transform: translateX(0);
+  opacity: 1;
+  transition: transform 2.2s cubic-bezier(0.33, 1, 0.68, 1) 0.3s, opacity 1.2s cubic-bezier(0.33, 1, 0.68, 1) 0.3s;
+}
+body.menu-open .p-nav__menu-item:nth-of-type(3) {
+  transform: translateX(0);
+  opacity: 1;
+  transition: transform 2.2s cubic-bezier(0.33, 1, 0.68, 1) 0.45s, opacity 1.2s cubic-bezier(0.33, 1, 0.68, 1) 0.45s;
+}
+body.menu-open .p-nav__menu-item:nth-of-type(4) {
+  transform: translateX(0);
+  opacity: 1;
+  transition: transform 2.2s cubic-bezier(0.33, 1, 0.68, 1) 0.6s, opacity 1.2s cubic-bezier(0.33, 1, 0.68, 1) 0.6s;
+}
+body.menu-open .p-nav__menu-item:nth-of-type(5) {
+  transform: translateX(0);
+  opacity: 1;
+  transition: transform 2.2s cubic-bezier(0.33, 1, 0.68, 1) 0.75s, opacity 1.2s cubic-bezier(0.33, 1, 0.68, 1) 0.75s;
+}
+body.menu-open .p-nav__menu-item:nth-of-type(6) {
+  transform: translateX(0);
+  opacity: 1;
+  transition: transform 2.2s cubic-bezier(0.33, 1, 0.68, 1) 0.9s, opacity 1.2s cubic-bezier(0.33, 1, 0.68, 1) 0.9s;
+}
+body.menu-open .p-nav__menu-item:nth-of-type(7) {
+  transform: translateX(0);
+  opacity: 1;
+  transition: transform 2.2s cubic-bezier(0.33, 1, 0.68, 1) 1.05s, opacity 1.2s cubic-bezier(0.33, 1, 0.68, 1) 1.05s;
+}
+body.menu-open .p-nav__menu-item:nth-of-type(8) {
+  transform: translateX(0);
+  opacity: 1;
+  transition: transform 2.2s cubic-bezier(0.33, 1, 0.68, 1) 1.2s, opacity 1.2s cubic-bezier(0.33, 1, 0.68, 1) 1.2s;
+}
+body.menu-open .p-nav__menu-item:nth-of-type(9) {
+  transform: translateX(0);
+  opacity: 1;
+  transition: transform 2.2s cubic-bezier(0.33, 1, 0.68, 1) 1.35s, opacity 1.2s cubic-bezier(0.33, 1, 0.68, 1) 1.35s;
+}
+body.menu-open .p-nav__menu-item:nth-of-type(10) {
+  transform: translateX(0);
+  opacity: 1;
+  transition: transform 2.2s cubic-bezier(0.33, 1, 0.68, 1) 1.5s, opacity 1.2s cubic-bezier(0.33, 1, 0.68, 1) 1.5s;
+}
+@media screen and (max-width: 767px) {
+  .p-nav__menu-item {
+    font-size: 33px;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+  }
+}
+.p-nav__menu-item:last-of-type {
+  margin: 0;
+}
+.p-nav__menu-item span {
+  display: block;
+}
+.p-nav__menu-item .p-in_text {
+  transition: color 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.p-nav__menu-item a {
+  color: #33272b;
+}
+.p-nav__snslist {
+  display: flex;
+  align-items: center;
+  width: 260px;
+  margin-top: 52px;
+  transform: translateX(-10px);
+  opacity: 0;
+  transition: all 0.3s cubic-bezier(0.33, 1, 0.68, 1);
+  padding-left: 4%;
+}
+body.menu-open .p-nav__snslist {
+  transform: translateX(0);
+  opacity: 1;
+  transition: transform 2.2s cubic-bezier(0.33, 1, 0.68, 1) 1.15s, opacity 1.2s cubic-bezier(0.33, 1, 0.68, 1) 1.15s;
+}
+@media screen and (max-width: 767px) {
+  .p-nav__snslist {
+    padding: 0 6%;
+    margin-top: 27px;
+  }
+}
+.p-nav__snslist-item {
+  width: 32px;
+  margin-right: 22px;
+}
+@media screen and (max-width: 767px) {
+  .p-nav__snslist-item {
+    width: 25px;
+    margin-right: 13px;
+  }
+}
+.p-nav__snslist-item:last-of-type {
+  margin-right: 0;
+}
+.p-nav__snslist-item.-ttl {
+  padding-top: 4px;
+  flex-shrink: 0;
+  font-weight: bold;
+  font-size: 17px;
+  letter-spacing: 1px;
+  width: 64px;
+font-family: 'Dongle', sans-serif;
+  margin-right: 17px;
+}
+@media screen and (max-width: 767px) {
+  .p-nav__snslist-item.-ttl {
+    font-size: 11px;
+    width: 47px;
+    margin-right: 8px;
+    padding-top: 2px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .p-nav__snslist-item a:hover svg {
+    fill: #ec7aac;
+  }
+}
+.p-nav__snslist-item a svg {
+  transition: fill 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: #33272b;
+}
+.p-nav__photo {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50%;
+  max-width: 770px;
+}
+@media screen and (max-width: 767px) {
+  .p-nav__photo {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    margin-top: 49px;
+  }
+}
+.p-nav__photo-inner {
+  transform: translateY(15px);
+  opacity: 0;
+  transition: transform 1.4s cubic-bezier(0.33, 1, 0.68, 1), opacity 0.6s cubic-bezier(0.33, 1, 0.68, 1);
+}
+body.menu-open .p-nav__photo-inner {
+  transform: translateY(0);
+  opacity: 1;
+  transition: transform 2.2s cubic-bezier(0.33, 1, 0.68, 1) 0.9s, opacity 0.8s cubic-bezier(0.33, 1, 0.68, 1) 0.9s;
+}
+.p-nav__photo .p-in_photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(-2deg);
+}
+.p-nav__photo .p-in_photo:nth-of-type(1) {
+  position: relative;
+  transform: rotate(3deg);
+  z-index: 1;
+}
+
+.p-logo {
+  margin: 29px auto 0px;
+  width: 165px;
+}
+@media screen and (max-width: 767px) {
+  .p-logo {
+    margin: 20px auto 0px;
+    width: 91px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .p-logo a {
+    transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .p-logo a:hover {
+    opacity: 0.7;
+  }
+}
+
+.p-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: url() no-repeat center center;
+  background-size: cover;
+}
+@media screen and (max-width: 767px) {
+  .p-bg {
+    background: url(https://horimiya-anime.com/img/common/bg_sp.jpg) no-repeat center center;
+    background-size: cover;
+  }
+}
+
+.l-wrap {
+  position: relative;
+  color: #33272b;
+  overflow: hidden;
+}
+
+.l-section_in__inner {
+  position: relative;
+  width: 90%;
+  max-width: 1077px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 4.5% 3.5% 7.5%;
+}
+@media screen and (max-width: 767px) {
+  .l-section_in__inner {
+    padding: 37px 5.5% 61px;
+  }
+}
+
+.c-back {
+  text-align: center;
+  margin-top: 61px;
+}
+@media screen and (max-width: 767px) {
+  .c-back {
+    margin-top: 43px;
+  }
+}
+.c-back a {
+font-family: 'Dongle', sans-serif;
+  color: #33272b;
+}
+@media screen and (min-width: 768px) {
+  .c-back a:hover .p-in_text {
+    color: #61b0e3;
+  }
+  .c-back a:hover .p-in_text::before {
+    transform: rotate(-180deg) translateX(5px);
+  }
+}
+.c-back a .p-in_text {
+  display: inline-block;
+  padding-left: 39px;
+  position: relative;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  transition: all 1.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+@media screen and (max-width: 767px) {
+  .c-back a .p-in_text {
+    padding-left: 17px;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+  }
+}
+.c-back a .p-in_text::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  transition: all 1.5s cubic-bezier(0.22, 1, 0.36, 1);
+  top: -2px;
+  left: 0;
+  background: url(https://horimiya-anime.com/assets/img/common/arrow_slide.svg) no-repeat center center;
+  background-size: contain;
+  transform: rotate(-180deg);
+}
+@media screen and (max-width: 767px) {
+  .c-back a .p-in_text::before {
+    width: 15px;
+    height: 15px;
+    top: -3px;
+    left: -11px;
+  }
+}
