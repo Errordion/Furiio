@@ -4834,7 +4834,7 @@ button.swiper-pagination-bullet {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: url(https://www.helck-anime.com/wp/wp-content/themes/helck_v1.1.0/assets/img/top/movie_play.png) center no-repeat;
+  background: url(https://cdn.glitch.global/96c46bda-e8ff-4382-97d1-c24b8deec725/%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5%E0%B8%8A%E0%B8%B7%E0%B9%88%E0%B8%AD%2010_20230904050620.png?v=1693778857693) center no-repeat;
   background-size: contain;
   z-index: 2;
   transition: opacity 0.6s cubic-bezier(0.33, 1, 0.68, 1), transform 0.6s cubic-bezier(0.33, 1, 0.68, 1);
