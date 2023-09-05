@@ -4744,8 +4744,8 @@ button.swiper-pagination-bullet {
 .p-movie_in__content-list-item .p-in-bg-frame::before {
   content: "";
   display: block;
-  width: 100%;
-  height: 100%;
+  width: 20%;
+  height: 20%;
   position: absolute;
   top: 0;
   left: 0;
